@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wanderer"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/wander"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/permanent_marker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/latitudeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/latitude"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/longitudeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/longitude"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintTop_toBottomOf="@+id/latitudeTextView"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/accTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/accuracy"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintTop_toBottomOf="@+id/longitudeTextView"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/altTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/altitude"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintTop_toBottomOf="@+id/accTextView"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/addTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/address"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintTop_toBottomOf="@+id/altTextView"
+        tools:layout_editor_absoluteX="16dp" />
+
+</android.support.constraint.ConstraintLayout>

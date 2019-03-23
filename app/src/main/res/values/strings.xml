@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wanderer</string>
+    <string name="wander">WANDERER</string>
+    <string name="latitude">Latitude: %1$f</string>
+    <string name="longitude">Longitude: %1$f</string>
+    <string name="accuracy">Accuracy: %1$f</string>
+    <string name="altitude">Altitude: %1$f</string>
+    <string name="address">Address: \n%1$s\n</string>
+</resources>
