@@ -67,9 +67,22 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < address.getMaxAddressLineIndex(); i++) {
                     sb.append(address.getAddressLine(i)).append("\n");
                 }
-                sb.append(address.getLocality()).append("\n");
-                sb.append(address.getPostalCode()).append("\n");
-                sb.append(address.getCountryName());
+
+                if(address.getSubThoroughfare() != null){
+                    sb.append(address.getSubThoroughfare()).append("\n");
+                }
+                if(address.getThoroughfare() != null) {
+                    sb.append(address.getThoroughfare()).append("\n");
+                }
+                if(address.getLocality() != null) {
+                    sb.append(address.getLocality()).append("\n");
+                }
+                if(address.getPostalCode() != null) {
+                    sb.append(address.getPostalCode()).append("\n");
+                }
+                if(address.getCountryCode() != null) {
+                    sb.append(address.getCountryName());
+                }
                 addTextView.setText(getString(R.string.address, sb));
             }
         } catch (IOException e) {
@@ -83,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+
 
         locationListener = new LocationListener() {
             @Override
