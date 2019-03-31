@@ -1,5 +1,5 @@
 # Wanderer
-Wnaderer Android 9.0 Application
+Wanderer Android 9.0 Application
 Aayush Mishra| 23.03.2019
 
 ## About the App
